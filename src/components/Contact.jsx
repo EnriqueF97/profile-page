@@ -13,7 +13,7 @@ export default function Contact() {
                 <img
                   src="/images/profile-pic.jpg"
                   alt="Enrique Favila"
-                  className="rounded-full w-full max-w-[160px] mx-auto border-4 border-white shadow-xl object-cover aspect-square"
+                  className="rounded-full w-full max-w-[200px] mx-auto  border-white shadow-xxl object-cover aspect-square"
                 />
               </div>
               
