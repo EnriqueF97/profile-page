@@ -9,7 +9,7 @@ import Education from './components/Education'
 
 function App() {
   return (
-    <div className="bg-gradient-to-l from-blue-950 md:from-40% via-zinc-900 to-stone-950 to-100% font-sans">
+    <div className="bg-gradient-to-tr from-blue-950 to-fuchsia-950 md:from-40% via-zinc-900 to-stone-950 to-100% font-sans">
       <Header />
       <main className="scroll-smooth mx-auto px-4 py-12 lg:py-16 max-w-screen-xl space-y-16 text-center">
         <Contact />

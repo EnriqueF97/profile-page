@@ -17,7 +17,7 @@ export default function ProjectCard({ title, image, description, links }) {
           <p className="mb-3 text-left">{description}</p>
           
           {/* Buttons row - aligned to the right */}
-          <div className="flex space-x-8 justify-center pt-2 mt-auto">
+          <div className="flex space-x-8 justify-left pt-2 mt-auto">
             {links.map((link, idx) => (
               <a 
                 key={idx} 
