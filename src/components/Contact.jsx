@@ -6,25 +6,87 @@ export default function Contact() {
           <h2 className="text-3xl font-semibold mb-4 text-white">Contact</h2>
         </div>
         <div className="lg:col-span-9">
-          <div className="bg-gradient-to-l from-fuchsia-100 via-amber-50 to-red-100 space-y-4 rounded-2xl p-4 text-center shadow-md transition-transform transform hover:-translate-y-1 grid grid-cols-1 lg:grid-cols-12">
-            <div className="lg:col-span-4 h-auto flex items-center">
-              <img
-                src="/images/profile-pic.jpg"
-                alt="Enrique Favila"
-                className="my-8 md:my-auto rounded-full w-40 h-40 mx-auto border-8 border-white shadow-xl object-cover scale-110"
-              />
-            </div>
-            <div className="lg:col-span-8 space-y-1 flex flex-col justify-center items-center">
-              <span className="text-2xl font-bold text-gray-800 pb-2">Enrique Favila Martínez</span>
-              <span className="text-gray-700">Full-Stack Developer • Artificial Intelligence Master's Student</span>
-              <span className="text-gray-800 pb-2">enriquefavilamartinez@gmail.com</span>
-              <p className="text-gray-700">🇲🇽 +52 777 496 8039</p>
-              <p className="text-gray-700">🇪🇸 +34 631 98 44 36</p>
-              <div className="flex justify-center gap-8 pt-4">
-                <a href="https://www.linkedin.com/in/enriquefavila/" target="_blank" rel="noopener noreferrer" className="inline-flex flex-col items-center text-blue-600 hover:text-blue-800"><i className="bi bi-linkedin text-2xl"></i></a>
-                <a href="https://github.com/EnriqueF97" target="_blank" rel="noopener noreferrer" className="inline-flex flex-col items-center text-gray-800 hover:text-black"><i className="bi bi-github text-2xl"></i></a>
-                <a href="mailto:enriquefavilamartinez@gmail.com?subject=Let's work together&body=Hi Enrique," className="inline-flex flex-col items-center text-gray-600 hover:text-gray-700"><i className="bi bi-envelope-fill text-2xl"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=56963460381" target="_blank" rel="noopener noreferrer" className="inline-flex flex-col items-center text-green-600 hover:text-green-700"><i className="bi bi-whatsapp text-2xl"></i></a>
+          <div className="bg-gradient-to-bl from-fuchsia-100 via-amber-50 to-red-100 rounded-2xl p-6 shadow-md transition-transform transform hover:-translate-y-1">
+            <div className="flex flex-col md:flex-row gap-6">
+              {/* Image - 33% */}
+              <div className="md:w-1/3 flex items-center">
+                <img
+                  src="/images/profile-pic.jpg"
+                  alt="Enrique Favila"
+                  className="rounded-full w-full max-w-[200px] mx-auto border-4 border-white shadow-xl object-cover aspect-square"
+                />
+              </div>
+              
+              {/* Content - 67% */}
+              <div className="md:w-2/3 flex flex-col">
+                {/* Name and Title - centered across both columns */}
+                <div className="text-left mb-6">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-1">Enrique Favila Martínez</h3>
+                  <p className="text-gray-700">AI Engineer</p>
+                </div>
+                
+                {/* Two columns for contact info and social media */}
+                <div className="flex flex-col md:flex-row gap-6">
+                  {/* Left Column - Contact Info */}
+                  <div className="md:w-1/2">
+                    <div className="space-y-3">
+                      {/* Email */}
+                      <div className="flex items-center gap-3">
+                        <i className="bi bi-envelope-fill text-gray-600 text-xl w-6"></i>
+                        <a href="mailto:enrique.favila@icloud.com" className="text-gray-700 hover:text-gray-900 text-sm">
+                          enrique.favila@icloud.com
+                        </a>
+                      </div>
+                      
+                      {/* Phone Spain */}
+                      <div className="flex items-center gap-3">
+                        <i className="bi bi-telephone-fill text-gray-600 text-xl w-6"></i>
+                        <span className="text-gray-700 text-sm">+34 631 98 44 36</span>
+                        <span className="text-xs text-gray-500 bg-gray-200 px-2 py-0.5 rounded">Spain</span>
+                      </div>
+                      
+                      {/* Phone Mexico */}
+                      <div className="flex items-center gap-3">
+                        <i className="bi bi-telephone-fill text-gray-600 text-xl w-6"></i>
+                        <span className="text-gray-700 text-sm">+52 777 496 8039</span>
+                        <span className="text-xs text-gray-500 bg-gray-200 px-2 py-0.5 rounded">Mexico</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Right Column - Social Media */}
+                  <div className="md:w-1/2">
+                    <div className="space-y-3">
+                      <a
+                        href="https://www.linkedin.com/in/enriquefavila/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 text-gray-700 hover:text-blue-700 transition-colors"
+                      >
+                        <i className="bi bi-linkedin text-xl w-6"></i>
+                        <span className="text-sm">linkedin.com/in/enriquefavila</span>
+                      </a>
+                      <a
+                        href="https://github.com/EnriqueF97"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 text-gray-700 hover:text-black transition-colors"
+                      >
+                        <i className="bi bi-github text-xl w-6"></i>
+                        <span className="text-sm">EnriqueF97</span>
+                      </a>
+                      <a
+                        href="https://api.whatsapp.com/send?phone=56963460381"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition-colors"
+                      >
+                        <i className="bi bi-whatsapp text-xl w-6"></i>
+                        <span className="text-sm">WhatsApp</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

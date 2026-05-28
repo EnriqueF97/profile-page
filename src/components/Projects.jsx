@@ -3,10 +3,33 @@ import ProjectCard from './ProjectCard'
 export default function Projects() {
   const projects = [
     {
+      title: "News Driven Liquidity Modelling",
+      image: "/images/liquidity-modelling.png",
+      description: "Working Thesis Project at Hammer Market Intelligence. Developed a Temporal Fusion Transformer (TFT) model to analyze the impact of geopolitical and sentiment-driven news on WTI crude oil liquidity dynamics and lag behavior. Found that news generate peak trading volume 6 hours after a news impact the market.",
+      links: [
+        { url: "https://github.com/EnriqueF97/hammer-market-intelligence-internship", icon: "bi-github", label: "GitHub", color: "text-gray-600 hover:text-gray-800 pointer-events-none" }
+      ]
+    },
+    {
+      title: "LLM Social Listening",
+      image: "/images/llm-social-listening.png",
+      description: "Sub project developed at Hammer Market Intelligence. Extracting and classifying social sentiment of AI Providers using LLM. Built an NLP pipeline processing 100k+ Reddit comments to classify LLM-provider mentions, extract sentiment, and identify aspect-level user feedback across major AI providers.",
+      links: [
+        { url: "https://github.com/freek1/llm-social-listening", icon: "bi-github", label: "GitHub", color: "text-gray-600 hover:text-gray-800 pointer-events-none" }
+      ]
+    },
+    {
+      title: "Maybe Obstacle",
+      image: "/images/maybe-obstacle.png",
+      description: "Unknown road obstacle detection using computer vision. Co-developed an uncertainty-aware computer vision framework for anomaly-based road obstacle detection using semantic segmentation outputs.",
+      links: [
+        { url: "https://github.com/edgarcancinoe/maybe-obstacle/tree/main", icon: "bi-github", label: "GitHub", color: "text-gray-600 hover:text-gray-800 pointer-events-none" }
+      ]
+    },
+    {
       title: "Pac-Man CTF",
       image: "/images/pacman_ctf.png",
       description: "The contest organized by UPF from Barcelona challenges participants to design intelligent agents that compete in a team-based, capture-the-flag variant of Pacman, where agents must balance offensive and defensive strategies. We used an A* algorithm for offensive and defensive with a unique defensive heuristic. Achieved Top 10 position in the final ranking.",
-      team: "only-pacmans",
       links: [
         { url: "https://pacman-contest.upf.edu/final_UL_24-25/results_0.html", icon: "bi-table", label: "Check scores", color: "text-purple-600 hover:text-purple-800" },
         { url: "https://github.com/EnriqueF97/EMAI-AS-Labs", icon: "bi-github", label: "GitHub", color: "text-gray-600 hover:text-gray-800" }
@@ -30,15 +53,6 @@ export default function Projects() {
         { url: "https://youtu.be/SzoTNIJ9cV4", icon: "bi-play-btn-fill", label: "Check", color: "text-red-600 hover:text-red-800" },
         { url: "https://github.com/EnriqueF97/asteroid-killer", icon: "bi-github", label: "GitHub", color: "text-gray-600 hover:text-gray-800" }
       ]
-    },
-    {
-      title: "Share Prompts",
-      image: "/images/share_prompts.png",
-      description: "Discover and share useful AI prompts with other users, just as easy as that. This project demonstrates NextJS capabilities to quickly build a full stack application in React using directory paths. Google API integration is used to log in and MongoDB to store both user profile info and prompts. Work in progress...",
-      links: [
-        { url: "#", icon: "bi-cursor-fill", label: "Visit", color: "text-stone-300 hover:text-blue-800 pointer-events-none" },
-        { url: "https://github.com/EnriqueF97/share_prompts", icon: "bi-github", label: "GitHub", color: "text-gray-600 hover:text-gray-800" }
-      ]
     }
   ]
 
@@ -49,7 +63,7 @@ export default function Projects() {
           <h2 className="text-3xl font-semibold mb-4 lg:text-left text-center text-white">Projects</h2>
         </div>
         <div className="lg:col-span-9">
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             {projects.map((project, idx) => (
               <ProjectCard key={idx} {...project} />
             ))}

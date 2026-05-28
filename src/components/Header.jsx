@@ -5,9 +5,10 @@ export default function Header() {
         <nav className="space-x-4 justify-end sm:justify-start overflow-x-auto whitespace-nowrap hide-scrollbar text-zinc-300">
           <a href="#contact" className="hover:text-zinc-50">Contact</a>
           <a href="#profile" className="hover:text-zinc-50">Profile</a>
+          <a href="#education" className="hover:text-zinc-50">Education</a>
           <a href="#skills" className="hover:text-zinc-50">Skills</a>
-          <a href="#projects" className="hover:text-zinc-50">Projects</a>
           <a href="#experience" className="hover:text-zinc-50">Experience</a>
+          <a href="#projects" className="hover:text-zinc-50">Projects</a>
           <a href="#certifications" className="hover:text-zinc-50">Certifications</a>
         </nav>
       </div>

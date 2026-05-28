@@ -7,9 +7,12 @@ export default function Profile() {
         </div>
         <div className="lg:col-span-9">
           <div className="bg-gradient-to-br from-zinc-100 via-stone-50 to-slate-50 p-4 space-y-4 rounded-2xl shadow-md transition-transform transform hover:-translate-y-1 text-left">
-            <p className="text-lg"><strong>Full-Stack Developer</strong> with a strong foundation in both frontend and backend development. I enjoy building complete, scalable solutions. From designing intuitive interfaces to structuring clean, efficient APIs in the backend.</p>
-            <p className="text-lg"><strong>Currently</strong>, I'm taking the Erasmus Mundus Joint Master in Artificial Intelligence, an international program where I study with extraordinary students from around the world across Spain, Italy, and the Netherlands, getting hands-on experience in advanced AI techniques and their practical applications.</p>
-            <p className="text-lg italic text-gray-500">"A good execution opens the door. But the presentation seals the deal."</p>
+            <p className="text-lg">
+              AI/ML Engineer with a software engineering background and specialization in Artificial Intelligence and Cybersecurity through the Erasmus Mundus Joint Master's programme.
+            </p>
+            <p className="text-lg">
+              Experienced in NLP, time-series forecasting, computer vision, cloud-native systems, and applied machine learning research.
+            </p>
           </div>
         </div>
       </div>
