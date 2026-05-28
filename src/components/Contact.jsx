@@ -6,21 +6,21 @@ export default function Contact() {
           <h2 className="text-3xl font-semibold mb-4 text-white">Contact</h2>
         </div>
         <div className="lg:col-span-9">
-          <div className="bg-gradient-to-bl from-fuchsia-100 via-amber-50 to-red-100 rounded-2xl p-6 shadow-md transition-transform transform hover:-translate-y-1">
+          <div className="bg-gradient-to-l from-fuchsia-100 via-amber-50 to-red-100 rounded-2xl p-6 shadow-md transition-transform transform hover:-translate-y-1 mx-auto w-full max-w-2xl lg:max-w-none">
             <div className="flex flex-col md:flex-row gap-6">
               {/* Image - 33% */}
               <div className="md:w-1/3 flex items-center">
                 <img
                   src="/images/profile-pic.jpg"
                   alt="Enrique Favila"
-                  className="rounded-full w-full max-w-[200px] mx-auto border-4 border-white shadow-xl object-cover aspect-square"
+                  className="rounded-full w-full max-w-[160px] mx-auto border-4 border-white shadow-xl object-cover aspect-square"
                 />
               </div>
               
               {/* Content - 67% */}
               <div className="md:w-2/3 flex flex-col">
                 {/* Name and Title - centered across both columns */}
-                <div className="text-left mb-6">
+                <div className="lg:text-left text-center mb-6">
                   <h3 className="text-2xl font-bold text-gray-800 mb-1">Enrique Favila Martínez</h3>
                   <p className="text-gray-700">AI Engineer</p>
                 </div>
@@ -29,7 +29,7 @@ export default function Contact() {
                 <div className="flex flex-col md:flex-row gap-6">
                   {/* Left Column - Contact Info */}
                   <div className="md:w-1/2">
-                    <div className="space-y-3">
+                    <div className="space-y-3 lg:items-left items-center">
                       {/* Email */}
                       <div className="flex items-center gap-3">
                         <i className="bi bi-envelope-fill text-gray-600 text-xl w-6"></i>

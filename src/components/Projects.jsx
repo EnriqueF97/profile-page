@@ -60,7 +60,7 @@ export default function Projects() {
     <section id="projects" className="scroll-mt-24">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
         <div className="lg:col-span-3">
-          <h2 className="text-3xl font-semibold mb-4 lg:text-left text-center text-white">Projects</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-white">Projects</h2>
         </div>
         <div className="lg:col-span-9">
           <div className="grid grid-cols-1 gap-4">

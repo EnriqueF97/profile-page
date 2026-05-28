@@ -1,6 +1,6 @@
 export default function ProjectCard({ title, image, description, links }) {
   return (
-    <div className="bg-gradient-to-bl from-zinc-50 to-purple-100 shadow-md rounded-2xl p-4 transition-transform transform hover:-translate-y-1">
+    <div className="bg-gradient-to-bl from-zinc-50 to-purple-100 shadow-md rounded-2xl p-4 transition-transform transform hover:-translate-y-1 mx-auto w-full max-w-2xl lg:max-w-none">
       <div className="flex flex-col md:flex-row gap-6">
         {/* Image - 33% */}
         <div className="md:w-1/3">
@@ -13,11 +13,11 @@ export default function ProjectCard({ title, image, description, links }) {
         
         {/* Content - 67% */}
         <div className="md:w-2/3 flex flex-col">
-          <h3 className="font-bold text-xl mb-2 text-left">{title}</h3>
-          <p className="mb-3 text-left">{description}</p>
+          <h3 className="font-bold text-xl mb-2 lg:text-left">{title}</h3>
+          <p className="mb-3 lg:text-left">{description}</p>
           
           {/* Buttons row - aligned to the right */}
-          <div className="flex space-x-8 justify-left pt-2 mt-auto">
+          <div className="flex space-x-8 justify-center pt-2 mt-auto">
             {links.map((link, idx) => (
               <a 
                 key={idx} 

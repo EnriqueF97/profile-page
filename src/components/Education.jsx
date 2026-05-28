@@ -37,7 +37,7 @@ export default function Education() {
         "Exchange at Prague's CTU for Machine Learning and Network Security"
       ],
       logo: "/images/itesm.png",
-      background: "blue-50"
+      background: "gray-100"
     }
   ]
 

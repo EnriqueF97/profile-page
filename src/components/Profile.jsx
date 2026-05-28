@@ -7,10 +7,10 @@ export default function Profile() {
         </div>
         <div className="lg:col-span-9">
           <div className="bg-gradient-to-br from-zinc-100 via-stone-50 to-slate-50 p-4 space-y-4 rounded-2xl shadow-md transition-transform transform hover:-translate-y-1 text-left">
-            <p className="text-lg">
+            <p className="text-lg lg:text-left text-center">
               AI/ML Engineer with a software engineering background and specialization in Artificial Intelligence and Cybersecurity through the Erasmus Mundus Joint Master's programme.
             </p>
-            <p className="text-lg">
+            <p className="text-lg lg:text-left text-center">
               Experienced in NLP, time-series forecasting, computer vision, cloud-native systems, and applied machine learning research.
             </p>
           </div>
