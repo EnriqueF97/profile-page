@@ -64,7 +64,7 @@ export default function Contact() {
                         className="flex items-center gap-3 text-gray-700 hover:text-blue-700 transition-colors"
                       >
                         <i className="bi bi-linkedin text-xl w-6"></i>
-                        <span className="text-sm">in/enriquefavila</span>
+                        <span className="text-sm">LinkedIn</span>
                       </a>
                       <a
                         href="https://github.com/EnriqueF97"
@@ -73,10 +73,10 @@ export default function Contact() {
                         className="flex items-center gap-3 text-gray-700 hover:text-black transition-colors"
                       >
                         <i className="bi bi-github text-xl w-6"></i>
-                        <span className="text-sm">EnriqueF97</span>
+                        <span className="text-sm">Github</span>
                       </a>
                       <a
-                        href="https://api.whatsapp.com/send?phone=56963460381"
+                        href="https://api.whatsapp.com/send?phone=527774968039"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition-colors"
