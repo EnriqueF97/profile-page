@@ -6,7 +6,7 @@ export default function Contact() {
           <h2 className="text-3xl font-semibold mb-4 text-white">Contact</h2>
         </div>
         <div className="lg:col-span-9">
-          <div className="bg-gradient-to-l from-fuchsia-100 via-amber-50 to-red-100 rounded-2xl p-6 shadow-md transition-transform transform hover:-translate-y-1 mx-auto w-full max-w-2xl lg:max-w-none">
+          <div className="bg-gradient-to-l from-fuchsia-100 via-amber-50 to-red-100 rounded-2xl p-6 shadow-md transition-transform transform hover:-translate-y-1 w-full">
             <div className="flex flex-col md:flex-row gap-6">
               {/* Image - 33% */}
               <div className="md:w-1/3 flex items-center">

@@ -1,6 +1,6 @@
 export default function ProjectCard({ title, image, description, links }) {
   return (
-    <div className="bg-gradient-to-bl from-zinc-50 to-purple-100 shadow-md rounded-2xl p-4 transition-transform transform hover:-translate-y-1 mx-auto w-full max-w-2xl lg:max-w-none">
+    <div className="bg-gradient-to-bl from-zinc-50 to-purple-100 shadow-md rounded-2xl p-4 transition-transform transform hover:-translate-y-1 w-full">
       <div className="flex flex-col md:flex-row gap-6">
         {/* Image - 33% */}
         <div className="md:w-1/3">
