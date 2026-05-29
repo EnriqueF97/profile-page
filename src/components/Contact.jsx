@@ -64,7 +64,7 @@ export default function Contact() {
                         className="flex items-center gap-3 text-gray-700 hover:text-blue-700 transition-colors"
                       >
                         <i className="bi bi-linkedin text-xl w-6"></i>
-                        <span className="text-sm">linkedin.com/in/enriquefavila</span>
+                        <span className="text-sm">in/enriquefavila</span>
                       </a>
                       <a
                         href="https://github.com/EnriqueF97"
