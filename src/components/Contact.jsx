@@ -29,7 +29,7 @@ export default function Contact() {
                 <div className="flex flex-col md:flex-row gap-6">
                   {/* Left Column - Contact Info */}
                   <div className="md:w-1/2">
-                    <div className="space-y-3 lg:items-left items-center">
+                    <div className="flex flex-col space-y-3 items-center md:items-start">
                       {/* Email */}
                       <div className="flex items-center gap-3">
                         <i className="bi bi-envelope-fill text-gray-600 text-xl w-6"></i>
@@ -56,7 +56,7 @@ export default function Contact() {
                   
                   {/* Right Column - Social Media */}
                   <div className="md:w-1/2">
-                    <div className="space-y-3">
+                    <div className="flex flex-col space-y-3 items-center md:items-start">
                       <a
                         href="https://www.linkedin.com/in/enriquefavila/"
                         target="_blank"
