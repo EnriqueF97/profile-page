@@ -5,6 +5,7 @@ export default function Experience() {
       'red-100': 'to-red-100',
       'orange-50': 'to-orange-50',
       'indigo-50': 'to-indigo-50',
+      'indigo-100': 'to-indigo-100',
       'fuchsia-50': 'to-fuchsia-50',
       'gray-100': 'to-gray-100'
     }
@@ -13,61 +14,59 @@ export default function Experience() {
 
   const experiences = [
     {
-      title: "AI Engineer Internship",
+      title: "AI Engineer Intern",
       company: "Hammer Market Intelligence",
       companyColor: "blue-600",
-      location: "The Netherlands",
-      date: "Feb 2026 - present",
+      location: "Arnhem, The Netherlands",
+      date: "Jan 2026 - Jul 2026",
       achievements: [
-        "Researched the impact of news sentiment and geopolitical events on WTI crude oil liquidity dynamics.",
-        "Built automated news scraping pipelines and engineered multi-signal datasets for financial time-series analysis.",
-        "Developed and trained a Temporal Fusion Transformer (TFT) model for liquidity forecasting in commodity markets.",
+        "Designed and trained a Temporal Fusion Transformer (TFT) to model how news sentiment and geopolitical events affect WTI crude oil liquidity.",
+        "Built a production LLM pipeline using Anthropic's API to extract structured multi-field signals from thousands of news articles; evaluated outputs against a held-out reference set using human and cross-model annotations.",
+        "Automated news scraping pipelines and engineered multi-signal datasets for financial time-series analysis.",
         "Co-developed an NLP pipeline analyzing 100k+ Reddit discussions to extract sentiment and provider-level insights across major LLM platforms."
       ],
       logo: "/images/hammer.png",
       background: "indigo-100"
     },
     {
-      title: "Full Stack Developer",
-      company: "Kodevox Consultory",
+      title: "Software Engineer & Team Lead",
+      company: "Kodevox",
       companyColor: "blue-600",
       location: "México City, México",
       date: "Mar 2024 - Dec 2024",
       achievements: [
-        "Developed backend services using Python FastAPI following Hexagonal Architecture and Domain-Driven Design (DDD) principles.",
-        "Built and maintained cloud native applications using AWS services and REST based microservices.",
-        "Designed SQL database schemas and contributed to scalable backend system architecture.",
-        "Developed frontend components using React and microfrontend architectures.",
-        "Worked in Linux-based development environments with git based version control workflows."
+        "Led a team of 3 junior engineers for 7 months: assigned work, reviewed code, ran sprint planning, and supported onboarding.",
+        "Engineered backend services in Python/FastAPI following Hexagonal Architecture and DDD principles, plus React components in a micro-frontend architecture.",
+        "Delivered full-stack features for a national broadcaster's internal media management portal, on AWS using REST-based microservices.",
+        "Designed SQL database schemas and contributed to scalable backend system architecture."
       ],
       logo: "/images/logo_kodevox.png",
       background: "orange-50"
     },
     {
-      title: "Front End Developer",
-      company: "Base22 Consultory",
+      title: "Software Engineer",
+      company: "Base22",
       companyColor: "blue-500",
       location: "Nuevo León, México",
       date: "Sep 2021 - Mar 2024",
       achievements: [
-        "Contributed to the development and maintenance of UPS' global employee portal using React, Vue.js, and HCL Digital Experience.",
-        "Improved application usability and implemented UX enhancements based on stakeholder requirements.",
-        "Managed deployments, debugging, and production issue resolution across CERT and PROD environments."
+        "Managed deployments, debugging, and production issue resolution on UPS' global employee portal across CERT and PROD environments.",
+        "Contributed to the development and maintenance of the portal using React, Vue.js, and HCL Digital Experience.",
+        "Improved application usability and implemented UX enhancements based on stakeholder requirements."
       ],
       logo: "/images/logo_base22.svg",
       background: "indigo-50"
     },
     {
-      title: "Cloud Developer",
+      title: "Software Engineer",
       company: "Vonaut",
       companyColor: "blue-600",
       location: "México City, México",
       date: "Jun 2020 - Sep 2021",
       achievements: [
-        "Developed a cloud-native inventory management platform integrating MercadoLibre and Amazon Store APIs.",
-        "Built serverless backend microservices using AWS Lambda and DynamoDB.",
-        "Developed Single Page Applications (SPA) using React functional components.",
-        "Implemented CI/CD workflows and cloud deployment pipelines in AWS environments."
+        "Delivered a cloud-native inventory management platform integrating MercadoLibre and Amazon Store APIs.",
+        "Built serverless backend microservices using AWS Lambda and DynamoDB, with CI/CD deployment pipelines.",
+        "Developed Single Page Applications (SPA) using React functional components."
       ],
       logo: "/images/vonaut.png",
       background: "fuchsia-50"

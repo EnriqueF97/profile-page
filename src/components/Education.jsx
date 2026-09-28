@@ -5,7 +5,7 @@ export default function Education() {
       degree: "M.Sc. Artificial Intelligence and Cybersecurity",
       description:"Scholar university in Artificial Intelligence and Cybersecurity, co-funded by the European Union, the EMAI offers 4 different specializations across different universities in Europe. Chosen specialization is Cybersecurity and AI",
       locations: "Spain - Italy - London - The Netherlands",
-      date: "Expected graduation: Aug 2026",
+      date: "2024 - 2026",
       achievements: [
         "UPF, Spain: First introduction to Machine Learning, Reinforcement Learning, Natural Language Processing, Autonomous Systems",
         "Sapienza, Italy: Artificial Intelligence, Computer Vision, Databases for Data Management",

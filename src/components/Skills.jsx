@@ -1,5 +1,10 @@
 export default function Skills() {
   const skills = [
+    { name: "Prompt Engineering", icon: "bi-chat-square-text", iconColor: "text-fuchsia-600" },
+    { name: "LLM Evaluation", icon: "bi-clipboard-check", iconColor: "text-emerald-600" },
+    { name: "RAG", icon: "bi-search", iconColor: "text-sky-600" },
+    { name: "LangChain", icon: "bi-link-45deg", iconColor: "text-teal-600" },
+    { name: "LangGraph", icon: "bi-bezier2", iconColor: "text-violet-600" },
     { name: "Python", icon: "bi-filetype-py", iconColor: "text-indigo-500" },
     { name: "JavaScript", icon: "bi-filetype-js", iconColor: "text-yellow-500" },
     { name: "SQL", icon: "bi-database", iconColor: "text-blue-500" },

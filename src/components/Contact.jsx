@@ -23,6 +23,10 @@ export default function Contact() {
                 <div className="lg:text-left text-center mb-6">
                   <h3 className="text-2xl font-bold text-gray-800 mb-1">Enrique Favila Martínez</h3>
                   <p className="text-gray-700">AI Engineer</p>
+                  <p className="text-sm text-gray-600 mt-1">
+                    <i className="bi bi-geo-alt-fill text-gray-500 mr-1"></i>
+                    Nijmegen, The Netherlands · Open to relocation
+                  </p>
                 </div>
                 
                 {/* Two columns for contact info and social media */}
