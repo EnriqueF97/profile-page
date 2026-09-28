@@ -14,10 +14,10 @@ function App() {
       <main className="scroll-smooth mx-auto px-4 py-12 lg:py-16 max-w-screen-xl space-y-16 text-center">
         <Contact />
         <Profile />
-        <Education />
         <Skills />
         <Experience />
         <Projects />
+        <Education />
         <Certifications />
       </main>
     </div>

@@ -1,22 +1,9 @@
 export default function Experience() {
-  // Map background names to actual Tailwind classes
-  const getBackgroundClass = (bg) => {
-    const backgrounds = {
-      'red-100': 'to-red-100',
-      'orange-50': 'to-orange-50',
-      'indigo-50': 'to-indigo-50',
-      'indigo-100': 'to-indigo-100',
-      'fuchsia-50': 'to-fuchsia-50',
-      'gray-100': 'to-gray-100'
-    }
-    return backgrounds[bg] || 'to-gray-100'
-  }
-
   const experiences = [
     {
       title: "AI Engineer Intern",
       company: "Hammer Market Intelligence",
-      companyColor: "blue-600",
+      companyColor: "text-blue-600",
       location: "Arnhem, The Netherlands",
       date: "Jan 2026 - Jul 2026",
       achievements: [
@@ -26,12 +13,12 @@ export default function Experience() {
         "Co-developed an NLP pipeline analyzing 100k+ Reddit discussions to extract sentiment and provider-level insights across major LLM platforms."
       ],
       logo: "/images/hammer.png",
-      background: "indigo-100"
+      background: "to-indigo-100"
     },
     {
       title: "Software Engineer & Team Lead",
       company: "Kodevox",
-      companyColor: "blue-600",
+      companyColor: "text-blue-600",
       location: "México City, México",
       date: "Mar 2024 - Dec 2024",
       achievements: [
@@ -41,12 +28,12 @@ export default function Experience() {
         "Designed SQL database schemas and contributed to scalable backend system architecture."
       ],
       logo: "/images/logo_kodevox.png",
-      background: "orange-50"
+      background: "to-orange-50"
     },
     {
       title: "Software Engineer",
       company: "Base22",
-      companyColor: "blue-500",
+      companyColor: "text-blue-500",
       location: "Nuevo León, México",
       date: "Sep 2021 - Mar 2024",
       achievements: [
@@ -55,12 +42,12 @@ export default function Experience() {
         "Improved application usability and implemented UX enhancements based on stakeholder requirements."
       ],
       logo: "/images/logo_base22.svg",
-      background: "indigo-50"
+      background: "to-indigo-50"
     },
     {
       title: "Software Engineer",
       company: "Vonaut",
-      companyColor: "blue-600",
+      companyColor: "text-blue-600",
       location: "México City, México",
       date: "Jun 2020 - Sep 2021",
       achievements: [
@@ -69,7 +56,7 @@ export default function Experience() {
         "Developed Single Page Applications (SPA) using React functional components."
       ],
       logo: "/images/vonaut.png",
-      background: "fuchsia-50"
+      background: "to-fuchsia-50"
     }
   ]
 
@@ -84,12 +71,12 @@ export default function Experience() {
             {experiences.map((exp, idx) => (
               <div
                 key={idx}
-                className={`bg-gradient-to-r from-white ${getBackgroundClass(exp.background)} p-4 rounded-2xl shadow-md text-center md:text-left transition-transform transform hover:-translate-y-1`}
+                className={`bg-gradient-to-r from-white ${exp.background} p-4 rounded-2xl shadow-md text-center md:text-left transition-transform transform hover:-translate-y-1`}
               >
                 <div className="flex md:flex-row flex-col-reverse justify-between gap-4">
                   <div>
                     <h3 className="text-xl font-bold text-gray-700">{exp.title}</h3>
-                    <span className={`text-sm font-bold text-${exp.companyColor}`}>{exp.company}</span>
+                    <span className={`text-sm font-bold ${exp.companyColor}`}>{exp.company}</span>
                     <span className="text-sm pl-1 text-gray-700">{exp.location}</span>
                     <span className="text-sm pl-1 text-gray-500">| {exp.date}</span>
                     <ul className="text-md space-y-1 list-disc pl-5 mt-4 text-left">

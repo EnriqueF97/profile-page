@@ -42,7 +42,7 @@ export default function Projects() {
     {
       title: "Pac-Man CTF",
       image: "/images/pacman_ctf.png",
-      description: "The contest organized by UPF from Barcelona challenges participants to design intelligent agents that compete in a team-based, capture-the-flag variant of Pacman, where agents must balance offensive and defensive strategies. We used an A* algorithm for offensive and defensive with a unique defensive heuristic. Achieved Top 10 position in the final ranking.",
+      description: "The contest organized by UPF from Barcelona challenges participants to design intelligent agents that compete in a team-based, capture-the-flag variant of Pacman, where agents must balance offensive and defensive strategies. We used an A* algorithm for offensive and defensive with a unique defensive heuristic. Finished in the top 10 out of 63 teams in the final ranking.",
       tags: ["Python", "A* Search", "Multi-Agent"],
       links: [
         { url: "https://pacman-contest.upf.edu/final_UL_24-25/results_0.html", icon: "bi-table", label: "Check scores", color: "text-purple-600 hover:text-purple-800" },
@@ -79,7 +79,7 @@ export default function Projects() {
           <h2 className="text-3xl font-semibold mb-4 text-white">Projects</h2>
         </div>
         <div className="lg:col-span-9">
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {projects.map((project, idx) => (
               <ProjectCard key={idx} {...project} />
             ))}

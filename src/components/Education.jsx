@@ -3,29 +3,29 @@ export default function Education() {
     {
       university: "Erasmus Mundus Joint Master Degree (EMAI)",
       degree: "M.Sc. Artificial Intelligence and Cybersecurity",
-      description:"Scholar university in Artificial Intelligence and Cybersecurity, co-funded by the European Union, the EMAI offers 4 different specializations across different universities in Europe. Chosen specialization is Cybersecurity and AI",
-      locations: "Spain - Italy - London - The Netherlands",
+      description: "Joint master's programme in Artificial Intelligence, co-funded by the European Union and taught across several European universities. The EMAI offers 4 specializations; my chosen specialization is AI and Cybersecurity.",
+      locations: "Spain - Italy - United Kingdom - The Netherlands",
       date: "2024 - 2026",
       achievements: [
-        "UPF, Spain: First introduction to Machine Learning, Reinforcement Learning, Natural Language Processing, Autonomous Systems",
-        "Sapienza, Italy: Artificial Intelligence, Computer Vision, Databases for Data Management",
-        "University College London, London: Participated in current and future state of the art AI research conferences. Exposed poster for the maybe-obstacle project",
-        "Radboud Universiteit, Netherlands: Cryptography, Online Tracking and Privacy, Software Security, Generative AI, Autoencoders. Transformer architectures for financial applications. Internship at Hammer Market Intelligence, as thesis project research in AI modelling WTI liquidity dynamics"
+        "Universitat Pompeu Fabra (Barcelona, Spain): Machine Learning, Reinforcement Learning, Natural Language Processing, and Autonomous Systems.",
+        "Sapienza University of Rome (Italy): Artificial Intelligence, Computer Vision, and Databases for Data Management.",
+        "University College London (UK): Attended research conferences on current and emerging state-of-the-art AI, and presented a poster on the Maybe Obstacle project.",
+        "Radboud University (Nijmegen, The Netherlands): Cryptography, Online Tracking and Privacy, Software Security, Generative AI, Autoencoders, and Transformer architectures for financial applications. Master's thesis carried out as an internship at Hammer Market Intelligence, modelling news-driven liquidity dynamics in WTI crude oil."
     ],
       logo: "/images/logo_emai.png",
-      background: "red-100"
+      background: "to-red-100"
     },
     {
-      university: "Czech's Technical University",
+      university: "Czech Technical University in Prague",
       degree: "Network Security and ML Exchange Course",
       locations: "Prague, Czech Republic",
       date: "May 2018 - Jul 2018",
       achievements: [
-        "Specialized course in Network Security using Kali Linux, WireShark among other cybersecurity tools",
-        "First dive into Machine Learning including unsupervised learning techniques"
+        "Specialized course in Network Security using Kali Linux, Wireshark, and other cybersecurity tools.",
+        "Introduction to Machine Learning, including unsupervised learning techniques."
       ],
       logo: "/images/ctu.png",
-      background: "indigo-50"
+      background: "to-indigo-50"
     },
     {
       university: "Monterrey Institute of Technology and Higher Education",
@@ -33,11 +33,11 @@ export default function Education() {
       locations: "Cuernavaca, México",
       date: "Aug 2015 - Jun 2020",
       achievements: [
-        "Degree: Bachelor of Science, courses focused on Intelligent Systems, Web development, Database modelling, Networks, C Programming",
-        "Exchange at Prague's CTU for Machine Learning and Network Security"
+        "Coursework focused on Intelligent Systems, Web Development, Database Modelling, Networks, and C Programming.",
+        "Exchange at Czech Technical University in Prague, in Machine Learning and Network Security."
       ],
       logo: "/images/itesm.png",
-      background: "gray-100"
+      background: "to-gray-100"
     }
   ]
 
@@ -52,7 +52,7 @@ export default function Education() {
             {education.map((edu, idx) => (
               <div
                 key={idx}
-                className={`bg-gradient-to-l from-white to-${edu.background} p-4 rounded-2xl shadow-md text-center md:text-left transition-transform transform hover:-translate-y-1`}
+                className={`bg-gradient-to-l from-white ${edu.background} p-4 rounded-2xl shadow-md text-center md:text-left transition-transform transform hover:-translate-y-1`}
               >
                 <div className="flex md:flex-row flex-col-reverse justify-between gap-4">
                   <div>

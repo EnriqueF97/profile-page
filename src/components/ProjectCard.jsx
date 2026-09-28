@@ -1,18 +1,18 @@
 export default function ProjectCard({ title, image, description, status, tags = [], links }) {
   return (
-    <div className="bg-gradient-to-bl from-zinc-50 to-purple-100 shadow-md rounded-2xl p-4 transition-transform transform hover:-translate-y-1 w-full">
-      <div className="flex flex-col md:flex-row gap-6">
-        {/* Image - 33% */}
-        <div className="md:w-1/3 md:self-center">
+    <div className="bg-gradient-to-bl from-zinc-50 to-purple-100 shadow-md rounded-2xl p-4 transition-transform transform hover:-translate-y-1 w-full h-full">
+      <div className="flex flex-col gap-4 h-full">
+        {/* Image on top, fixed 16:9 frame, never cropped */}
+        <div className="aspect-video bg-white rounded-xl overflow-hidden">
           <img
             src={image}
             alt={title}
-            className="rounded-xl w-full h-auto"
+            className="w-full h-full object-contain"
           />
         </div>
 
-        {/* Content - 67% */}
-        <div className="md:w-2/3 flex flex-col">
+        {/* Content */}
+        <div className="flex flex-col flex-1">
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-2">
             <h3 className="font-bold text-xl lg:text-left">{title}</h3>
             {status && (

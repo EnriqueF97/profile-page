@@ -1,7 +1,7 @@
 export default function Certifications() {
   const certifications = [
     {
-      title: "2nd place out of 63 teams in Autonomous Systems PacMan CTF Agent Tournament",
+      title: "Top 10 out of 63 teams in the Autonomous Systems Pac-Man CTF Agent Tournament",
       issuer: "Erasmus Mundus Master in AI",
       issuerColor: "text-purple-600",
       year: "2024"
