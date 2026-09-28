@@ -7,6 +7,8 @@ export default function ProjectCard({ title, image, description, status, tags = 
           <img
             src={image}
             alt={title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-contain"
           />
         </div>

@@ -70,6 +70,8 @@ export default function Education() {
                   <img
                     src={edu.logo}
                     alt={`${edu.university} logo`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-48 h-auto my-4 mx-auto md:my-auto md:ml-auto md:mr-0 flex-shrink-0 rounded"
                   />
                 </div>
