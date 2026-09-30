@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="bg-zinc-950 text-white shadow-xl p-4 sticky top-0 z-10">
+    <header className="bg-zinc-950/60 backdrop-blur-md border-b border-white/10 text-white shadow-xl p-4 sticky top-0 z-10">
       <div className="container mx-auto flex justify-end items-center">
         <nav className="space-x-4 justify-end sm:justify-start overflow-x-auto whitespace-nowrap hide-scrollbar text-zinc-300">
           <a href="#contact" className="hover:text-zinc-50">Contact</a>
